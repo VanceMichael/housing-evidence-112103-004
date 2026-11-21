@@ -1,0 +1,9 @@
+{
+  "sources": [
+    {"source_id": "policy-city-a", "record_kind": "policy", "collected_at": "2026-09-20T00:00:00+08:00", "payload": {"city": "CITY-A", "revision": 4, "effective_from": "2026-09-20", "eligible_use": ["home-repair", "property-fee"], "household_property_fee_cap_yuan": 6000}},
+    {"source_id": "application-81", "record_kind": "application", "collected_at": "2026-10-11T10:10:00+08:00", "payload": {"application_id": "AP-81", "member_ref": "M-SYN-3", "household_ref": "H-SYN-5", "city": "CITY-A", "use": "home-repair", "amount_yuan": 38000, "state": "submitted"}},
+    {"source_id": "invoice-92", "record_kind": "receipt", "collected_at": "2026-10-11T10:12:00+08:00", "payload": {"receipt_id": "INV-92", "application_id": "AP-81", "issuer_ref": "SHOP-SYN-2", "date": "2026-10-08", "amount_yuan": 38000, "revision": 1}},
+    {"source_id": "application-82", "record_kind": "application", "collected_at": "2026-10-11T10:20:00+08:00", "payload": {"application_id": "AP-82", "member_ref": "M-SYN-4", "household_ref": "H-SYN-5", "city": "CITY-A", "use": "property-fee", "amount_yuan": 5200, "state": "submitted"}},
+    {"source_id": "payment-14", "record_kind": "payment", "collected_at": "2026-10-11T15:18:00+08:00", "payload": {"payment_id": "PAY-14", "application_id": "AP-81", "amount_yuan": 38000, "state": "paid"}}
+  ]
+}
