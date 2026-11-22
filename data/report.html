@@ -1,0 +1,34 @@
+<!DOCTYPE html>
+<html lang="zh-CN"><head><meta charset="utf-8">
+<title>住房消费提取工作台</title>
+<style>
+body { font-family: "Noto Sans CJK SC", "Microsoft YaHei", sans-serif; margin: 24px; color: #1f2933; }
+h1 { font-size: 20px; } h2 { font-size: 16px; margin-top: 28px; border-left: 4px solid #2b6cb0; padding-left: 8px; }
+table { border-collapse: collapse; width: 100%; font-size: 13px; }
+th, td { border: 1px solid #cbd2d9; padding: 6px 8px; text-align: left; vertical-align: top; }
+th { background: #f0f4f8; }
+td.num { text-align: right; font-variant-numeric: tabular-nums; }
+.state { padding: 2px 8px; border-radius: 10px; font-size: 12px; }
+.state.paid { background: #c6f6d5; } .state.approved { background: #bee3f8; }
+.state.submitted { background: #edf2f7; } .state.rejected { background: #fed7d7; }
+.state.withdrawn { background: #e9d8fd; }
+small { color: #616e7c; }
+</style></head><body>
+<h1>住房消费提取工作台 · 办理总览</h1>
+<small>全部为虚构合成资料；政策调整只影响未结申请，已付款项目保留当时依据。</small>
+<h2>申请清单</h2>
+<table><thead><tr><th>申请号</th><th>城市</th><th>用途</th><th>申请金额</th><th>状态</th><th>硬性问题</th><th>可批准金额</th></tr></thead>
+<tbody><tr><td>AP-80</td><td>CITY-A</td><td>购房</td><td class='num'>120,000</td><td><span class='state paid'>已到账</span></td><td>当前生效政策不允许以「home-purchase」用途申请提取</td><td class='num'>120,000</td></tr><tr><td>AP-86</td><td>CITY-A</td><td>购房</td><td class='num'>60,000</td><td><span class='state submitted'>待审核</span></td><td>当前生效政策不允许以「home-purchase」用途申请提取</td><td class='num'>60,000</td></tr><tr><td>AP-81</td><td>CITY-A</td><td>装修</td><td class='num'>38,000</td><td><span class='state paid'>已到账</span></td><td>票据 INV-92 已被申请 AP-84 同时提交，疑似重复报销<br>票据 INV-92 已被撤回，不能作为办理依据</td><td class='num'>0</td></tr><tr><td>AP-82</td><td>CITY-A</td><td>物业费</td><td class='num'>5,200</td><td><span class='state submitted'>待审核</span></td><td>缺少必备材料：property-fee-invoice<br>有效票据金额合计 0 元，低于申请金额 5200 元</td><td class='num'>0</td></tr><tr><td>AP-83</td><td>CITY-A</td><td>物业费</td><td class='num'>6,500</td><td><span class='state submitted'>待审核</span></td><td>—</td><td class='num'>6,000</td></tr><tr><td>AP-84</td><td>CITY-A</td><td>装修</td><td class='num'>5,000</td><td><span class='state submitted'>待审核</span></td><td>票据 INV-92 已被申请 AP-81 同时提交，疑似重复报销<br>票据 INV-92 已被撤回，不能作为办理依据</td><td class='num'>5,000</td></tr><tr><td>AP-85</td><td>CITY-A</td><td>装修</td><td class='num'>12,000</td><td><span class='state submitted'>待审核</span></td><td>票据 INV-95 已被撤回，不能作为办理依据</td><td class='num'>0</td></tr><tr><td>AP-87</td><td>CITY-B</td><td>物业费</td><td class='num'>4,000</td><td><span class='state submitted'>待审核</span></td><td>票据 INV-97 日期 2026-03-01 超出政策规定的 6 个月受理窗口</td><td class='num'>3,000</td></tr><tr><td>AP-88</td><td>CITY-B</td><td>物业费</td><td class='num'>3,000</td><td><span class='state submitted'>待审核</span></td><td>住房证明与申请人/家庭/房屋不匹配：申请人 M-SYN-6 不在产权人名单 [&#x27;M-SYN-5&#x27;]</td><td class='num'>2,000</td></tr><tr><td>AP-90</td><td>CITY-B</td><td>购房</td><td class='num'>50,000</td><td><span class='state submitted'>待审核</span></td><td>住房证明与申请人/家庭/房屋不匹配：家庭 H-SYN-9≠H-SYN-6；申请人 M-SYN-5 不在产权人名单 [&#x27;M-SYN-9&#x27;]；房屋 HOUSE-SYN-9≠HOUSE-SYN-6</td><td class='num'>50,000</td></tr><tr><td>AP-89</td><td>CITY-A</td><td>装修</td><td class='num'>3,000</td><td><span class='state submitted'>待审核</span></td><td>有效票据金额合计 2800 元，低于申请金额 3000 元</td><td class='num'>2,800</td></tr></tbody></table>
+<h2>重审队列 · 政策驱动</h2>
+<table><thead><tr><th>申请号</th><th>状态</th><th>原因</th></tr></thead>
+<tbody><tr><td>AP-86</td><td>待审核</td><td>政策第 3 版 → 第 4 版</td></tr></tbody></table>
+<h2>重审队列 · 材料驱动</h2>
+<table><thead><tr><th>申请号</th><th>状态</th><th>原因</th></tr></thead>
+<tbody><tr><td>AP-85</td><td>待审核</td><td>票据 INV-95 已撤回</td></tr><tr><td>AP-89</td><td>待审核</td><td>票据 INV-98 已更正至第 2 版（金额 2800 元）</td></tr></tbody></table>
+<h2>家庭年度额度台账</h2>
+<table><thead><tr><th>家庭</th><th>年度</th><th>用途</th><th>申请号</th><th>成员</th><th>已批占用</th><th>已付</th><th>状态</th></tr></thead>
+<tbody><tr><td>H-SYN-5</td><td>2026</td><td>购房</td><td>AP-80</td><td>M-SYN-3</td><td class='num'>120,000</td><td class='num'>120,000</td><td>已到账</td></tr><tr><td>H-SYN-5</td><td>2026</td><td>装修</td><td>AP-81</td><td>M-SYN-3</td><td class='num'>38,000</td><td class='num'>38,000</td><td>已到账</td></tr></tbody></table>
+<h2>政策版本</h2>
+<table><thead><tr><th>城市</th><th>版本</th><th>生效日</th><th>可申请用途</th><th>家庭年度上限</th><th>票据窗口</th></tr></thead>
+<tbody><tr><td>CITY-A</td><td>3</td><td>2026-01-01</td><td>购房、装修、物业费</td><td>购房: 200,000，装修: 100,000，物业费: 4,000</td><td>12 个月</td></tr><tr><td>CITY-A</td><td>4</td><td>2026-09-20</td><td>装修、物业费</td><td>物业费: 6,000</td><td>12 个月</td></tr><tr><td>CITY-B</td><td>1</td><td>2026-03-01</td><td>购房、物业费</td><td>购房: 180,000，物业费: 3,000</td><td>6 个月</td></tr></tbody></table>
+</body></html>
